@@ -8,15 +8,14 @@ import { Sidebar } from './layout/sidebar/sidebar';
 import { Header } from './layout/header/header';
 
 @NgModule({
-  declarations: [
+  declarations: [],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
     App,
     MainLayout,
     Sidebar,
     Header
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
   ],
   providers: [
     provideBrowserGlobalErrorListeners()
