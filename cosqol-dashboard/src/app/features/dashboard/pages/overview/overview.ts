@@ -3,6 +3,7 @@ import Chart from 'chart.js/auto';
 
 @Component({
   selector: 'app-overview',
+  standalone: true,
   templateUrl: './overview.html',
   styleUrls: ['./overview.scss']
 })
@@ -35,7 +36,7 @@ export class Overview implements AfterViewInit {
             scales: {
                 y: {
                     beginAtZero: true,
-                    ticks: { callback: function(value) { return value + 's'; } }
+                    ticks: { callback: function(value: string | number) { return value + 's'; } }
                 },
                 x: { grid: { display: false } }
             }

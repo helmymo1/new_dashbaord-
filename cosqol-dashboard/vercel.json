@@ -3,12 +3,12 @@
     {
       "src": "package.json",
       "use": "@vercel/angular",
-      "options": {
-        "outputDirectory": "dist"
+      "config": {
+        "distDir": "dist/cosqol-dashboard/browser"
       }
     }
   ],
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+  "routes": [
+    { "src": "/.*", "dest": "/index.html" }
   ]
 }

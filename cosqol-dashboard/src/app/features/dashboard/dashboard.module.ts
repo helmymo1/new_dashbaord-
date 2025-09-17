@@ -6,12 +6,11 @@ import { Overview } from './pages/overview/overview';
 
 
 @NgModule({
-  declarations: [
-    Overview
-  ],
+  declarations: [],
   imports: [
     CommonModule,
-    DashboardRoutingModule
+    DashboardRoutingModule,
+    Overview
   ]
 })
 export class DashboardModule { }

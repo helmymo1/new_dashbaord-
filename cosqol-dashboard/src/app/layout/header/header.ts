@@ -4,6 +4,7 @@ import { filter, map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-header',
+  standalone: true,
   templateUrl: './header.html',
   styleUrls: ['./header.scss']
 })
