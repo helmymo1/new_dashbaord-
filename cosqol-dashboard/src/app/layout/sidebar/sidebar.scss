@@ -1,0 +1,51 @@
+.sidebar {
+    width: 280px;
+    background-color: var(--sidebar-background);
+    border-right: 1px solid var(--border-color);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+.sidebar-header {
+    height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 1rem;
+    margin-bottom: 2rem;
+}
+.logo-text {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary-brand-color);
+}
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.nav-item a {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--text-secondary);
+    font-weight: 500;
+    transition: all 0.3s;
+}
+.nav-item a svg {
+    margin-right: 1rem;
+}
+.nav-item.active a, .nav-item a:hover {
+    background-color: var(--primary-brand-color);
+    color: var(--text-light);
+}
+.nav-item.active a .nav-icon-stroke, .nav-item a:hover .nav-icon-stroke {
+    stroke: var(--text-light);
+}
+.nav-item.active .nav-icon-fill, .nav-item a:hover .nav-icon-fill {
+    fill: var(--text-light);
+}

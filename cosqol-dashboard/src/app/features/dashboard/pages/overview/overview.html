@@ -1,1 +1,52 @@
-<p>overview works!</p>
+<div class="overview-grid">
+    <div class="card stats-card">
+        <h3 class="card-title">Number Of Students</h3>
+        <p class="main-stat">258 <span>students</span></p>
+        <div class="sub-stat">
+            <p>This week: <strong>58</strong></p>
+            <p>During the month of JAN: <strong>200</strong></p>
+        </div>
+    </div>
+    <div class="card profit-card">
+         <h3 class="card-title">Your Profit</h3>
+        <p class="text-5xl font-bold">200.00$</p>
+        <p class="mt-4 text-sm opacity-90 max-w-lg">
+            Lorem ipsum dolor sit amet consectetur. Nisl pulvinar vel pretium ullamcorper eget condimentum risus magna pretium. Amet odio nisl augue sit.
+        </p>
+        <div class="promo-details">
+            <p>Promocode: #AH1234<br><small class="opacity-80">Start from 02/2024 to 10/2024</small></p>
+            <p class="text-center font-bold">30%<br><small class="opacity-80 font-normal">Commission per student</small></p>
+            <p class="text-center font-bold">15%<br><small class="opacity-80 font-normal">Student discount</small></p>
+        </div>
+    </div>
+    <div class="card chart-card">
+        <h3 class="card-title">Monthly Income</h3>
+        <canvas #incomeChart height="250"></canvas>
+    </div>
+    <div class="card subscriptions-card">
+         <h3 class="card-title">Student Subscription</h3>
+         <div style="display: flex; flex-direction: column; gap: 1.5rem; margin-top: 1rem;">
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <div style="width: 48px; height: 48px; border-radius: 8px; background: #F4F5FA; display:grid; place-items:center;">...</div>
+                <div>
+                    <p>Month</p>
+                    <strong>234 students</strong>
+                </div>
+            </div>
+             <div style="display: flex; align-items: center; gap: 1rem;">
+                <div style="width: 48px; height: 48px; border-radius: 8px; background: #F4F5FA; display:grid; place-items:center;">...</div>
+                <div>
+                    <p>6-Months</p>
+                    <strong>234 students</strong>
+                </div>
+            </div>
+             <div style="display: flex; align-items: center; gap: 1rem;">
+                <div style="width: 48px; height: 48px; border-radius: 8px; background: #F4F5FA; display:grid; place-items:center;">...</div>
+                <div>
+                    <p>Yearly</p>
+                    <strong>234 students</strong>
+                </div>
+            </div>
+         </div>
+    </div>
+</div>

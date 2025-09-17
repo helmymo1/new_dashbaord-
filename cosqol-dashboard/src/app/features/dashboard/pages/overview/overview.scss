@@ -1,0 +1,48 @@
+.overview-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+.stats-card { grid-column: span 1; }
+.profit-card {
+    grid-column: span 2;
+    background: var(--primary-brand-color);
+    color: var(--text-light);
+}
+.profit-card .card-title { color: rgba(255, 255, 255, 0.8); }
+.chart-card { grid-column: span 2; }
+.subscriptions-card { grid-column: span 1; }
+
+.main-stat {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary-brand-color);
+}
+.main-stat span {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+}
+.sub-stat {
+    margin-top: 1.5rem;
+    color: var(--text-secondary);
+}
+
+.promo-details {
+    margin-top: 1rem;
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 1rem;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-5xl { font-size: 2.5rem; }
+.font-bold { font-weight: 700; }
+.mt-4 { margin-top: 1rem; }
+.text-sm { font-size: 0.9rem; }
+.opacity-90 { opacity: 0.9; }
+.opacity-80 { opacity: 0.8; }
+.max-w-lg { max-width: 32rem; }
+.text-center { text-align: center; }
+.font-normal { font-weight: 400; }
