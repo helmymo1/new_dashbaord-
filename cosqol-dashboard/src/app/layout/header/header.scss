@@ -1,0 +1,28 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    height: 92px;
+    background-color: var(--content-background);
+    border-bottom: 1px solid var(--border-color);
+    flex-shrink: 0;
+}
+.header-title {
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: var(--text-primary);
+}
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.user-profile span {
+    font-weight: 600;
+}
+.user-profile img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}

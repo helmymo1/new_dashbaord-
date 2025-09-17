@@ -2,10 +2,13 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-main-layout',
-  standalone: false,
   templateUrl: './main-layout.html',
-  styleUrl: './main-layout.scss'
+  styleUrls: ['./main-layout.scss']
 })
 export class MainLayout {
+  currentPageTitle: string = 'OVERVIEW';
 
+  updateTitle(title: string) {
+    this.currentPageTitle = title;
+  }
 }
