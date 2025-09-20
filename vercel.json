@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "cosqol-dashboard/package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "cosqol-dashboard/dist/cosqol-dashboard"
+      }
+    }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
+}
