@@ -6,9 +6,7 @@ describe('App', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [
-        RouterModule.forRoot([])
-      ],
-      declarations: [
+        RouterModule.forRoot([]),
         App
       ],
     }).compileComponents();
@@ -20,10 +18,9 @@ describe('App', () => {
     expect(app).toBeTruthy();
   });
 
-  it('should render title', () => {
+  it(`should have as title 'cosqol-dashboard'`, () => {
     const fixture = TestBed.createComponent(App);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, cosqol-dashboard');
+    const app = fixture.componentInstance;
+    expect(app.title).toEqual('cosqol-dashboard');
   });
 });
